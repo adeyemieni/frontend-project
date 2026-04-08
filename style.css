@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color:#f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+ h1 {
+    color: #1e40af;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+}
+h2 {
+    color: #374151;
+    font-size: 22px;
+    font-weight: 600;
+}
+p  {
+    line-height: 1.6;
+}
+u1 {
+    font-size: 16px;
+    margin-top: 10px;
+}  
+header, main, footer {
+background-color: white;
+border: 1px solid #ddd;
+padding: 16px;
+margin-bottom: 16px;
+}
+ul, ol {
+    padding-left: 20px;
+}   
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.skills {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.skill {
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+    text-align: center;
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+    float: left;
+    margin-right: 16px;
+}
+.banner {
+    background-image: url("global-earth.webp");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-img:hover {
+    border-color: #1e40af;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+.banner:hover {
+    opacity: 0.9;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.project {
+    padding: 16px;
+    border: 1px solid #ccc;
+    background-color: #f9fafb;
+    text-align: center;
+    border-radius: 6px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+@media (max-width:600px) {
+    .skills {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .projects {
+        grid-template-columns: 1 fr;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+button {
+    background-color: #1e40af;
+    color: #f9fafb;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #374151;
+}
+img {
+    width: 300px;
+    height: auto;
+    float: center;
+}
