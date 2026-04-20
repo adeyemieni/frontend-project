@@ -7,27 +7,43 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<body>
+
 <header>
     <a href="index.html">
-    <button  type="submit">Back</button> 
+        <button  type="submit">Back</button> 
     </a>
-<h1>Follow up</h1>
-<P>Reach out to me personally.</P>
+
+    <h1>Follow up</h1>
+    <P>Reach out to me personally.</P>
 </header>
+
 <main>
-<h2>Login Form</h2>
-<form action="/login" method="POST">
-<label for="email">Email:</label><br>
-<input type="email" id="email" name="email" required>
-<br /><br />
-<label for="password">Password:</label><br>
-<input type="password" id="password" name="password" required><br><br>
-<button  type="submit">Login</button>
-</form>
+    <h2>Login Form</h2>
+
+    <form action="/login" method="POST">
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br/><br/>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button  type="submit">Login</button>
+
+        <!-- Remember Me Checkbox Added -->
+        <div class="options">
+            <label>
+                <input type="checkbox" name="remember"> Remember Me
+            </label>
+            <a href="forget password">Forget Password?</a>
+        </div>
+        <br><br>
+
 </main>
+
 <footer>
-<p>Thank you for visiting!</p>
+    <p>Thank you for visiting!</p>
 </footer>
+
 </body>
 </html>
